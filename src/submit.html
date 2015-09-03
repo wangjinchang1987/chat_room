@@ -54,6 +54,8 @@ a:active {
 }
 
 h2{
+	padding:0px;
+	margin:0px;
 	font-size: 14px;
 	background: #eee;
 	height: 25px;
@@ -69,8 +71,7 @@ border:0px;
 
 #register{
 	width: auto;
-	height: 500px;
-	background:#00ff00;
+	height: 350px;
 	border: 0px solid #ffffff;
 }
 
@@ -79,7 +80,7 @@ border:0px;
 }
 
 #register dl{
-	margin: auto;
+	margin: 40px auto;
 	width: 280px;
 }
 
@@ -94,6 +95,7 @@ border:0px;
 #register dl dd{
 	width: auto;
 	padding: 5px 0;
+	margin:0px;
 }
 
 #register dl dd input.submit{
@@ -128,6 +130,23 @@ border:0px;
 	top: 5px;
 	cursor: pointer;
 }
+#footer{
+	clear:both;
+	width: auto;
+	height: 60px;
+	text-align: center;
+	margin-top: 10px;
+}
+
+#footer p{
+	font-size: 12px;
+	letter-spacing: 1px;
+	padding: 5px 0 0 0;
+}
+
+#footer p span{
+	color: #06f;
+}
   </style>
 </head>
 
@@ -157,7 +176,6 @@ border:0px;
                   </tr>
                   <tr>
                     <td bgcolor="#FFFFFF"><div id="register">
-                        <h2>注册</h2>
                       <form action="register.php" method="post" name="register" id="form_user">
                           <input type="hidden" name="action" value="register"/>
                           <input type="hidden" name="uniqid" value="0150055904eb54cdf017c9e9b1a4baf5b07b1354"/>
@@ -183,9 +201,6 @@ border:0px;
                               男
                               <input type="radio" value="女" name="sex"/>
                               女</dd>
-                            <dd> 头&nbsp;&nbsp;像：<img src="faces/1.jpg" alt="头像选择" title=src class="face" id="faceimg"/>
-                                <input type="hidden" name="face" value="faces/1.jpg" id="face"/>
-                            </dd>
                             <dd>电子邮件：
                                 <input type="text" class="text" name="email"/>
                             </dd>
@@ -195,9 +210,6 @@ border:0px;
                             <dd>主页地址：
                                 <input type="text" class="text" name="url" value=""/>
                             </dd>
-                            <dd>验 证 码：
-                                <input type="text" name="yanzhengma" id="yanzhengma" class="yanzhengma"/>
-                              &nbsp;<img src="authentication_code.php" alt="authentication_code.php" id="code"/></dd>
                             <dd>
                               <input name="submit" type="submit" class="submit" id="submit" value="&nbsp;注&nbsp;&nbsp;册&nbsp;"/>
                             </dd>
@@ -213,7 +225,9 @@ border:0px;
       </tr>
     </tbody>
   </table>
-  <p>&nbsp;</p>
-
+<div id="footer">
+<p>我听见你的声音，有中特别的感觉，让我不断的想，不敢再忘记你。我听见你的声音，有中特别的感觉，让我不断的想，不敢再忘记你。</p>
+<p><span>王杰提供</span> bilibili</p>
+</div>
 </body>
 </html>
