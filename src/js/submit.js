@@ -34,7 +34,7 @@ function onLoad(){
 		}
 
 		if (_chat_id.length > 20 || _chat_id.length == 0){
-			alert("姓名长度不正确");
+			alert("ID长度不正确");
 			fm.chat_id.value = '';
   			fm.chat_id.focus();
   			return false;
